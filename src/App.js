@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ComponentC from './components/ComponentC';
+import Counter1 from './components/Counter1';
+// import IntervalHookCounter from './components/IntervalHookCounter';
+// import MouseContainer from './components/MouseContainer';
+// import HookCounterFour from './components/HookCounterFour';
+// import HookCounterThree from './components/HookCounterThree';
+// import HookCounterTwo from './components/HookCounterTwo';
+// import Counter from './components/Counter';
+// import HookCounter from './components/HookCounter';
+// import HookMouse from './components/HookMouse';
+
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Counter/> */}
+      {/* <HookCounter/> */}
+      {/* <HookCounterTwo/> */}
+      {/* <HookCounterThree/> */}
+      {/* <HookCounterFour/> */}
+      {/* <HookMouse/> */}
+      {/* <MouseContainer/> */}
+      {/* <IntervalHookCounter/> */}
+      {/* <UserContext.Provider value={'Divyang'}>
+        <ChannelContext.Provider value={'Tecmantras'}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider> */}
+      <Counter1/>
     </div>
   );
 }
