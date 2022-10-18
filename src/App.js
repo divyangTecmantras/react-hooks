@@ -1,7 +1,12 @@
 import React from 'react';
 import './App.css';
-import ComponentC from './components/ComponentC';
-import Counter1 from './components/Counter1';
+// import ComponentA from './components/ComponentA';
+// import ComponentB from './components/ComponentB';
+// // import Counter3 from './components/Counter3';
+// import ComponentC from './components/ComponentC';
+import ParentComponent from './components/ParentComponent';
+// import Counter1 from './components/Counter1';
+// import Counter2 from './components/Counter2';
 // import IntervalHookCounter from './components/IntervalHookCounter';
 // import MouseContainer from './components/MouseContainer';
 // import HookCounterFour from './components/HookCounterFour';
@@ -11,10 +16,24 @@ import Counter1 from './components/Counter1';
 // import HookCounter from './components/HookCounter';
 // import HookMouse from './components/HookMouse';
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// export const CountContext = React.createContext()
+// export const ChannelContext = React.createContext()
+// const initialState = 0
+// const reducer =(state,action)=>{
+//  switch(action){
+//     case 'increment':
+//         return state + 1
+//     case 'decrement' :
+//         return state -1
+//         case 'reset':
+//             return initialState
+//             default : 
+//             return state
+//  }
+// }
 
 function App() {
+  // const[count,dispatch]=useReducer(reducer,initialState)
 
   return (
     <div className="App">
@@ -31,7 +50,16 @@ function App() {
           <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider> */}
-      <Counter1/>
+      {/* <Counter1/> */}
+      {/* <Counter2/> */}
+      {/* <Counter3/> */}
+      {/* <CountContext.Provider value={{countState:count,countDispatch:dispatch}}>
+     Count- {count}
+      <ComponentA/>
+      <ComponentB/>
+      <ComponentC/>
+      </CountContext.Provider> */}
+      <ParentComponent/>
     </div>
   );
 }
