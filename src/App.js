@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
+// import FocusInput from './components/FocusInput';
+import HookTimer from './components/HookTimer';
 // import ComponentA from './components/ComponentA';
 // import ComponentB from './components/ComponentB';
 // // import Counter3 from './components/Counter3';
 // import ComponentC from './components/ComponentC';
-import ParentComponent from './components/ParentComponent';
+// import ParentComponent from './components/ParentComponent';
 // import Counter1 from './components/Counter1';
 // import Counter2 from './components/Counter2';
 // import IntervalHookCounter from './components/IntervalHookCounter';
@@ -59,7 +61,9 @@ function App() {
       <ComponentB/>
       <ComponentC/>
       </CountContext.Provider> */}
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+      {/* <FocusInput/> */}
+      <HookTimer/>
     </div>
   );
 }
