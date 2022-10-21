@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
+import Location from './components/Location';
 // import FocusInput from './components/FocusInput';
-import HookTimer from './components/HookTimer';
+// import HookTimer from './components/HookTimer';
 // import ComponentA from './components/ComponentA';
 // import ComponentB from './components/ComponentB';
 // // import Counter3 from './components/Counter3';
@@ -63,7 +64,8 @@ function App() {
       </CountContext.Provider> */}
       {/* <ParentComponent/> */}
       {/* <FocusInput/> */}
-      <HookTimer/>
+      {/* <HookTimer/> */}
+      <Location/>
     </div>
   );
 }
